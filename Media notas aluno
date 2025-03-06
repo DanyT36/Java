@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Media_de_notas {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner (System.in);
+	System.out.println("Digite a primeira nota");
+	double n1 = scanner.nextDouble();
+	System.out.println("Digite a segunda nota");
+	double n2 = scanner.nextDouble();
+	System.out.println("Digite a terceira nota");
+	double n3 = scanner.nextDouble();
+	double md = (n1+n2+n3)/3;
+	if(md <= 4) {
+	System.out.println(md + "Reprovado");
+	}else if(md<=5) {
+	System.out.println(md + "Recuperação");
+	}else if(md<=10) {
+	System.out.println(md + "Aprovado");
+	}else {
+	System.out.println(md + "Média Inválida");
+	scanner.close();
+	}
+	}
+}
+	
+	
