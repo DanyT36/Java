@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Salario_vendedores {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner (System.in);
+		System.out.println("Digite o total de produtos vendidos pelo vendedor 1");
+		double p1 = scanner.nextDouble();
+		System.out.println("Digite o total de produtos vendidos pelo vendedor 2");
+		double p2 = scanner.nextDouble();
+		System.out.println("Digite o total de produtos vendidos pelo vendedor 3");
+		double p3 = scanner.nextDouble();
+		double b = 1500;
+		double c1 = p1 * 0.15;
+		double c2 = p2 * 0.15;
+		double c3 = p3 * 0.15;
+		System.out.println("A comissão obtida pelo vendedor 1:" + c1);
+		System.out.println("A comissão do vendedor 2 foi:" + c2);
+		System.out.println("A comissão do vendedor 3 foi:" + c3);
+		double s1 = b + c1;
+		double s2 = b + c2;
+		double s3 = b + c3;
+		System.out.println("O salário do vendedor 1 é:" + s1);
+		System.out.println("O salário do vendedor 2 é:" + s2);
+		System.out.println("O salário do vendedor 3 é:" + s3);
+		if(s1>s2) {
+		System.out.println(s1 + "O vendedor 1 faturou mais");
+		}else if(s1<s2) {
+		System.out.println(s2 + "O vendedor 2 faturou mais");
+		}else {
+		System.out.println("Outro vendedor faturou mais que o vendedor 2");
+		scanner.close();
+		}
+		}
+		}
